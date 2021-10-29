@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Jacquemusa Fashion Web</title>
+</head>
+<body>
+    <header>
+        <!--Menu de Navegación-->
+        <div>
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu"> <img src="/static/img/botonMenu.png" alt="Menú" id="imagenMenu"></label>
+            <nav class="menu">
+                <ul>
+                    <li> <a href="/templates/index.html"> Inicio </a></li>
+                    <li> <a href="/templates/contacto.html"> Contacto</a></li>
+                    <li> <a href="/templates/acercaDe.html"> Acerca de </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--banner-->
+    <div class="banner">
+        <div class="banner-text">
+          <h1 class="tituloBanner">Jacquemusa</h1><hr>
+          <h3>Contactate con nosotros.</h3><br>
+        </div>
+    </div>
+
+        <!--Formulario de contacto 1-->
+    <div class="container">
+            <!--https://www.w3schools.com/js/js_validation.asp
+            https://www.youtube.com/watch?v=rsd4FNGTRBw-->
+        <script src="/static/js/form.js"></script>
+        <form action="" name="formularioJs" class="formulario">
+            <h2 class="formularioTitulo">Contacto</h2>
+            <label for="nombre" class="formularioDato"> Nombre Completo: </label> <br>
+            <input type="text" name="nombre" id="nombre" class="formularioInput" placeholder="Nombre Apellido" required> <br>
+
+            <label for="email" class="formularioDato">Correo Electrónico: </label> <br>
+            <input type="email" id="email" name="email" class="formularioInput" placeholder="ejemplo@ejemplo.com" required><br>
+                
+            <label for="comentario" class="formularioDato">Comentario: </label> <br>
+            <input type="textarea" name="comentario" id="nombre" class="formularioInput" placeholder="Aquí va tu comentario..." required style="height: 100px;"> <br>
+                
+                
+            <input type="submit" value="Enviar" class="formularioEnviar">
+        </form>
+    </div>
+
+    <hr>
+    <footer>
+        <p>© 2021. Autora: Sol Santillan<br>
+        <a href="ssolsantillan.ok@gmail.com">ssolsantillan.ok@gmail.com</a></p>
+    </footer>
+</body>
+</html>
